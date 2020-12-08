@@ -1,0 +1,11 @@
+﻿{
+  "GeneralError": "حدث خطا",
+  "InvalidRequest": "هناك خطا في الإتصال",
+  "CommitFailed": "حدث خطا إثناء الحفظ",
+  "InvalidId": "هذا المعرف غير موجود او به خطا",
+  "InvalidName": "إسم المنتج مطلوب",
+  "InvalidPhoto": "صورة المنتج مطلوبة",
+  "InvalidPrice": "سعر المنتج مطلوب",
+  "ProductNotFound": "هذا المنتج غير موجود لدينا",
+  "NameAlreadyExisit": "إسم هذا المنتج موجود مسبقا"
+}

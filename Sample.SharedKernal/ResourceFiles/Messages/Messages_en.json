@@ -1,0 +1,11 @@
+{
+  "GeneralError": "GeneralError",
+  "InvalidRequest": "InvalidRequest",
+  "CommitFailed": "CommitFailed",
+  "InvalidId": "InvalidId",
+  "InvalidName": "InvalidName",
+  "InvalidPhoto": "InvalidPhoto",
+  "InvalidPrice": "InvalidPrice",
+  "ProductNotFound": "ProductNotFound",
+  "NameAlreadyExisit": "NameAlreadyExisit"
+}
