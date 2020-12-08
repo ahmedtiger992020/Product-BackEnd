@@ -1,0 +1,10 @@
+It is very sample backEnd to Presenting your Task
+
+-------Steps To Runing----
+
+1-Clone Project
+2-Be Sure Project run at this port http://localhost:44310
+3-Change database Connection in appsettings.json to your AHMEDRADWAN to => YourDbServer
+           "ConnectionStrings": {
+              "DBConString": "server=AHMEDRADWAN;Database=Sample;Integrated Security=true;"
+            }
