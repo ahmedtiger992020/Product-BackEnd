@@ -85,7 +85,7 @@ namespace Sample.Web.Contollers
         /// </summary>
         /// <returns>List of Products</returns>
         [HttpGet]
-        public async Task<ActionResult<ListResultDto<IdNameDto>>> GetUserDDL()
+        public async Task<ActionResult<ListResultDto<IdNameDto>>> GetProductDDL()
         {
             await GetProductDDLUseCase.HandleUseCase(GetProductDDLPresenter);
             return GetProductDDLPresenter.Result;
