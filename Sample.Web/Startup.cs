@@ -124,6 +124,12 @@ namespace Sample.Web
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+
+            using (var serviceScope = app.ApplicationServices.GetService<IServiceScopeFactory>().CreateScope())
+            {
+                var context = serviceScope.ServiceProvider.GetRequiredService<SampleContext>();
+                context.Database.EnsureCreated();
+            }
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
@@ -138,8 +144,7 @@ namespace Sample.Web
             app.UseHttpsRedirection();
             app.UseStaticFiles(new StaticFileOptions
             {
-                FileProvider = new PhysicalFileProvider(
-        Path.Combine(env.ContentRootPath, "documents")),
+                FileProvider = new PhysicalFileProvider(Path.Combine(env.ContentRootPath, "documents")),
                 RequestPath = "/documents"
             });
             app.UseRouting();

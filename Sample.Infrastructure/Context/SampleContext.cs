@@ -26,7 +26,8 @@ namespace Sample.Infrastructure.Context
             optionsBuilder.EnableSensitiveDataLogging();
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer("server=AHMEDRADWAN;Database=Sample;Integrated Security=true;");
+                //when migrating only
+                optionsBuilder.UseSqlServer("server=(server);Database=Sample;Integrated Security=true;");
             }
         }
 
